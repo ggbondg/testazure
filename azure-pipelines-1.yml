@@ -55,11 +55,16 @@ stages:
   displayName: Stage Component B
   dependsOn: Stage_Starting_Point
   jobs:
-  - job: Job_Comp_B
-    displayName:  Job Component B
+  - job: Job_Comp_B1
+    displayName:  Job Component B1
     steps:
-    - script: echo building Component B
-      displayName: build component B
+    - script: echo building Component B1
+      displayName: build component B1
+  - job: Job_Comp_B2
+    displayName:  Job Component B2
+    steps:
+    - script: echo building Component B2
+      displayName: build component B2
 
 - stage: Stage_Comp_C
   dependsOn: Stage_Starting_Point
